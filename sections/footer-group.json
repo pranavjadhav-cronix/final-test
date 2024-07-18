@@ -1,0 +1,143 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter_AniQRp": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_qMaeNL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_MHFedR": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email_form_JggL3A": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_qMaeNL",
+        "paragraph_MHFedR",
+        "email_form_JggL3A"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_dH338e": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": false
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Experience",
+            "menu": "experience"
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Company",
+            "menu": "company"
+          }
+        },
+        "link_list_DTpVeh": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_dH338e",
+        "footer-0",
+        "footer-1",
+        "link_list_DTpVeh"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "a.link.link--text.list-menu__item.list-menu__item--link.list-menu__item--active {text-decoration: none;}",
+        "@media screen and (min-width: 749px) {.footer-block.grid__item.footer-block--menu.scroll-trigger.animate--slide-in {padding-left: 10rem; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Join our mailing list",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 48,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "footer_custom_63qjg8": {
+      "type": "footer-custom",
+      "blocks": {
+        "text_VndQVf": {
+          "type": "Text",
+          "settings": {
+            "heading-fr": "Experience",
+            "menu-fr": "experience"
+          }
+        },
+        "text_NgDAe8": {
+          "type": "Text",
+          "settings": {
+            "heading-fr": "Company",
+            "menu-fr": "company"
+          }
+        },
+        "text_RVzcfT": {
+          "type": "Text",
+          "settings": {
+            "heading-fr": "Support",
+            "menu-fr": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "text_VndQVf",
+        "text_NgDAe8",
+        "text_RVzcfT"
+      ],
+      "settings": {
+        "logo-fr": "shopify:\/\/shop_images\/Inhaven_Logo.svg",
+        "title-fr": "",
+        "description-fr": "Inhaven empowers small business owners with simple inventory management solutions that save them significant time and money; to reach the highest standards; and to generate the greatest value.",
+        "show_sign-up-fr": true,
+        "social_media_icons-fr": true,
+        "padding_top": 60,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "newsletter_AniQRp",
+    "footer",
+    "footer_custom_63qjg8"
+  ]
+}

@@ -1,0 +1,146 @@
+{{ 'section-image-banner-cust.css' | asset_url | stylesheet_tag }}
+
+<!-- {%- style -%}
+  .banner-img-{{ section.id }} .img_banner:before {
+    opacity: {{ section.settings.image_overlay }}%;
+  }
+{%- endstyle -%} -->
+
+<section class="banner-img-{{ section.id }}">
+  
+  <div class="img_banner">
+    {% if section.settings.image_with_text_banner %}
+      {{ section.settings.image_with_text_banner | image_url: width: 1300| image_tag: class: 'image_bg' }}
+    {% endif %}
+
+    <div class="banner-content page-width">
+      {% for block in section.blocks %}
+        {% if block.settings.inline_title %}
+          <h2 class="heading">{{ block.settings.inline_title }}</h2>
+          <style>        
+            .banner-img-{{ section.id }} .img_banner .heading {
+                color: {{ block.settings.text_color }};
+            }
+          </style>
+        {% endif %}
+  
+        {% if block.settings.button-ib-1 %}
+          <a class="custom-button_outline" href="{{ block.settings.button-ib-link-1 }}">{{ block.settings.button-ib-1 }}</a>
+        {% endif %}
+        
+        {% if block.settings.button-ib-2 %}
+          <a class="custom-button_solid" href="{{ block.settings.button-ib-link-2 }}">{{ block.settings.button-ib-2 }}</a>
+            {% endif %}        
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Image Banner Custom",
+    "class": "image-banner-custom",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_with_text_banner",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "image_overlay",
+        "min": 10,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "Image Overlay",
+        "default": 20
+      }, 
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      }, 
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+  "blocks": [
+        {
+      "type": "text",
+      "name": "text",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "inline_title",
+          "label": "Title"
+        }, 
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Colour",
+          "default": "#ffffff"
+        },
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Outline Button",
+          "id": "button-ib-1",
+          "default": "Get a demo"
+        },
+        {
+          "type": "url",
+          "label": "Outline Button Link",
+          "id": "button-ib-link-1"
+        },
+        {
+          "type": "text",
+          "label": "Solid Button",
+          "id": "button-ib-2",
+          "default": "Sign up for free"
+        },
+        {
+          "type": "url",
+          "label": "Solid Button Link",
+          "id": "button-ib-link-2"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Image Banner Custom"
+      }
+    ]
+  }
+{% endschema %}
+

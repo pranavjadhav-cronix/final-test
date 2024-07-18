@@ -1,0 +1,71 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "disabled": true,
+      "custom_css": [
+        ".list-menu--inline {display: flex; justify-content: space-evenly; align-items: center; align-content: center; flex-wrap: wrap; border-top: 1px solid #000;}",
+        "span.header__active-menu-item {text-decoration: none;}"
+      ],
+      "settings": {
+        "logo_position": "top-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "none",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    },
+    "header_custom_83c8Hx": {
+      "type": "header-custom",
+      "settings": {
+        "logo-header": "shopify:\/\/shop_images\/Inhaven_Logo.svg",
+        "menu_links": "main-menu",
+        "button-hd": "Sign Up",
+        "button_url-hd": "shopify:\/\/collections\/inhaven",
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "header_custom_83c8Hx"
+  ]
+}

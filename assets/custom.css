@@ -1,0 +1,257 @@
+/* Buttons */
+
+a.custom-button_solid {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1.2rem 4rem;
+    background: #D8C826;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+}
+
+a.custom-button_outline {
+    color: #343432;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 1.2rem 4rem;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1.1px solid #343432;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+}
+
+a.custom-button_solid:hover{
+    background: #f1e002;
+}
+a.custom-button_outline:hover{
+    background: #f5f5f5;
+}
+
+  @media screen and (max-width: 750px) {
+    a.custom-button_outline, a.custom-button_solid {
+      font-size: 1.6rem;
+      padding: 1rem 2.5rem;
+    }
+  }
+
+/* Image Banner */
+
+.banner a.button.button--primary.button-primary-light-whi  {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.banner a.button.button--primary.button-secondary-dark-yll {
+    background-color: #D8C826;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.banner .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 749px) {
+    .banner--content-align-mobile-center .banner__buttons--multiple>* {
+        min-width: 0 !important;
+    }
+}
+
+/* Multicolumn  */
+
+.multicolumn .title-wrapper-with-link {
+    justify-content: center;
+    text-align: center;
+}
+
+.multicolumn .multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--third-width.multicolumn-card-spacing {
+    width: 60px;
+}
+
+.multicolumn h3.inline-richtext {
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 2.8rem;
+}
+
+.multicolumn .multicolumn-card__info .rte {
+    text-align: left;
+    color: var(--White, #FFF);
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+}
+
+.multicolumn .rte ul, .rte ol {
+    list-style-position: unset;
+}
+
+.multicolumn img.multicolumn-card__image2 {
+    display: none !important;
+}
+  
+.multicolumn img.multicolumn-card__image {
+    display: unset !important;
+}
+
+/* Rich Text */
+
+.rich-text h2.rich-text__heading.rte.inline-richtext.h1.scroll-trigger.animate--slide-in {
+      font-size: 3.5rem;
+}
+
+.rich-text .button, .shopify-challenge__button, .customer button {
+      padding: 0 2.4rem;
+}
+
+.rich-text .rich-text__buttons--multiple>* {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+
+
+@media screen and (max-width: 749px) {
+  
+  .multicolumn .background-none .multicolumn-card__image-wrapper+.multicolumn-card__info{
+     padding-top: 1rem !important;
+  }
+    
+  .multicolumn .page-width.section-template--22705821188389__multicolumn-padding.isolate.scroll-trigger.animate--slide-in {
+        background-color: #F9F8F5;
+    }
+    
+  h2.title.inline-richtext.h1 {
+      color: #343432;
+      font-family: "DM Sans";
+  }
+  
+  .multicolumn richtext.h1 {
+        font-size: 2.6rem;
+        color: #343432;
+        text-align: center;
+        font-family: "DM Sans";
+    }
+    
+  .multicolumn li#Slide-template--22705821188389__multicolumn-1 {
+        padding: 2rem 0;
+        background: #8DC6BE;
+        margin: 1.4rem 0;
+        border-radius: 10px;
+    }
+    
+  .multicolumn li#Slide-template--22705821188389__multicolumn-2 {
+        padding: 2rem 0;
+        background: #D8C826;
+        margin: 1.4rem 0;
+        border-radius: 10px;
+    }
+    
+  .multicolumn li#Slide-template--22705821188389__multicolumn-3 {
+        padding: 2rem 0;
+        background: #F39865;
+        margin: 1.4rem 0;
+        border-radius: 10px;
+    }
+  
+  .multicolumn img.multicolumn-card__image2 {
+      display: unset !important;
+  }
+    
+  .multicolumn img.multicolumn-card__image {
+      display: none !important;
+  }
+
+}
+
+/* MultiRow */
+
+.multirow .image-with-text .grid {
+      align-items: center;
+}
+
+.multirow .image-with-text img {
+    width: auto;
+    height: auto;
+}
+
+.multirow p.image-with-text__text.image-with-text__text--caption.caption-with-letter-spacing.caption-with-letter-spacing--medium {
+    color: #fff;
+    font-size: 3rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.multirow.section-template--22705821188389__multirow_JtbbBj-padding p.image-with-text__text.image-with-text__text--caption.caption-with-letter-spacing.caption-with-letter-spacing--medium {
+    background-color: #D8C826;
+}
+
+
+.multirow.section-template--22705821188389__multirow_bj6XNJ-padding p.image-with-text__text.image-with-text__text--caption.caption-with-letter-spacing.caption-with-letter-spacing--medium {
+    background-color: #C0DDD9;;
+}
+
+
+.multirow.section-template--22705821188389__multirow_kX6egq-padding p.image-with-text__text.image-with-text__text--caption.caption-with-letter-spacing.caption-with-letter-spacing--medium {
+    background-color: #F39865;
+}
+
+
+@media screen and (max-width: 750px) {
+    
+  .multirow a.button.button--secondary {
+    background: #F9F8F5;
+  }
+  
+  .multirow.section-template--22705821188389__multirow_kX6egq-padding {
+    background-color: #F9F8F5;
+  }
+  
+  .multirow.section-template--22705821188389__multirow_JtbbBj-padding {
+    background-color: #F9F8F5;
+  }
+
+  .multirow .multirow__inner.page-width {
+    padding-top: 3rem;
+  }
+
+  .multirow p.image-with-text__text.image-with-text__text--caption.caption-with-letter-spacing.caption-with-letter-spacing--medium {
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
+}
+ 
+}
+
+/* Blog */
+
+.blog .blog-articles .article-card .card__information, .blog__posts .article-card .card__information {
+    padding-left: 2rem;
+}
+
+.blog h3.card__heading.h2 {
+    color: var(--Inhaven-Coal, #343432);
+    font-family: "DM Sans";
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+
+.blog .article-card__info.caption-with-letter-spacing.h5 {
+    color: var(--Basic-Grey-75, #8F968B);
+    font-family: "DM Sans";
+    font-size: 1.2rem;
+}
+
